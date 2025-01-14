@@ -5,7 +5,6 @@ import { useFrame } from "@react-three/fiber";
 export default function Model(props) {
   const groupRef = useRef();
   const data = useScroll();
-  const [position, setposition] = useState([3.5, 0.3, 3]);
 
   useFrame(() => {
     groupRef.current.rotation.y = data.offset * Math.PI * 2;
