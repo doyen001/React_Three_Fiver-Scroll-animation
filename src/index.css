@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-family: Rowdies,sans-serif;
+}
+.custom-scrollbar {
+  overflow-y: scroll;
+  scrollbar-width: thin;  /* For Firefox */
+  scrollbar-color: #ff0000 #ffffff;  /* For Firefox */
+}
+.custom-scrollbar::-webkit-scrollbar {
+	width: 12px;  /* For Chrome, Safari, and Opera */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+	background-color: #ffffff;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	background-color: #ff0000;
+	border-radius: 6px;
+}
+canvas{
+	width: 100vw;
+	height: 100vh;
+	background: rgb(189,165,165);
+	background: radial-gradient(circle, rgb(201, 193, 246) 0%, rgba(247,247,247,1) 0%, rgb(226, 219, 255) 100%);
+}
+
+.blocks{
+	width: 100vw;
+	background-color: orage;
+	height: 100vh;
+	
+}
+
+.block-1{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+	justify-content: space-between;
+	padding: 80px;
+}
+.block-1 h1{
+	font-size: 35px;
+	color: #494949;
+}
+
+.block-2{
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+}
+
+.block-2 .box{
+	width: 300px;
+	height: 400px;
+	padding: 30px;
+	border: 1px solid aqua;
+	border-radius: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	background-color: rgba(178, 178, 178, 0.169);
+	backdrop-filter: blur(5px);
+}
+
+.block-2 .box h1{
+	color: rgb(68, 68, 68);
+}
+
+.block-2 .box p{
+	color: rgb(112, 112, 113);
+}
+
+.block-2 .box button{
+	width: 100%;
+	height: 43px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	font-size: 20px;
+}
+
+.block-2 .box img{
+	width: 30px;
+}
+
+.block-3{
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+}
+
+.block-3 h1{
+	color: rgb(85, 85, 255);
+	font-size: 200px;
+	text-align: center;
+}
+.block-4{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.block-4 .box{
+	width: auto;
+	padding: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+	background-color: rgba(178, 178, 178, 0.169);
+	border: 1px solid aqua;
+	height: 600px;
+	border-radius: 20px;
+	backdrop-filter: blur(10px);
+}
+.block-4 h1{
+	color: rgb(54, 54, 54);
+	font-size: 25px;
+	text-shadow: 0px 0px 2px white;
+	text-align: center;
+}
